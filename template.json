@@ -1,28 +1,28 @@
 {
     "properties": {
+        "fasta_reference": {
+            "default": "swiss.HUMAN.20141123.amyloid.v2.fasta",
+            "enum": [
+                "swiss.HUMAN.20141123.amyloid.v2.fasta"
+            ],
+            "title": "",
+            "type": "string"
+        },
         "input_path": {
             "default": "s3://uwlm-chemistry-data/lcms_raw/",
             "title": "",
             "type": "string"
         },
-        "fasta_reference": {
-            "default": "swiss.HUMAN.20141123.amyloid.v2.fasta",
-            "title": "",
-            "type": "string",
-            "enum": [
-                "swiss.HUMAN.20141123.amyloid.v2.fasta"
-              ]
-        },
         "output_path": {
             "default": "s3://uwlm-chemistry-data/crux_output/",
             "title": "",
             "type": "string"
-        },
+        }
     },
     "required": [
         "input_path",
-        "fasta_reference", 
-        "output_path",
+        "fasta_reference",
+        "output_path"
     ],
     "type": "object"
 }
